@@ -1,0 +1,14 @@
+ul,
+li {
+  list-style: none;
+  text-align: start;
+}
+
+.contactItem {
+  padding-left: 0;
+  gap: 10px;
+}
+
+/*.btnContact {
+  position: absolute;
+}*/
