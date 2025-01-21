@@ -5,10 +5,30 @@ li {
 }
 
 .contactItem {
-  padding-left: 0;
-  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+  transition: transform 0.3s, opacity 0.3s;
 }
 
-/*.btnContact {
-  position: absolute;
-}*/
+.contactItem:hover {
+  transform: scale(1.02);
+  background-color: #e6f7ff;
+
+  transform: translateY(-10px);
+  animation: fadeIn 0.5s forwards;
+}
+
+.btnDelete {
+  background: linear-gradient(45deg, #6a85b6, #bac8e0);
+  color: white;
+  transition: background-color 0.25s ease;
+}
+.btnDelete:hover {
+  background: linear-gradient(45deg, #5b76a4, #9cb3d3);
+}

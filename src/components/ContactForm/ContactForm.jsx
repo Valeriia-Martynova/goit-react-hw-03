@@ -31,14 +31,17 @@ const ContactForm = ({ onAddContact }) => {
         <div className={c.inputContainer}>
           <label htmlFor="name">Name</label>
           <div className={c.inputWrapper}>
-            <FaPen className={c.icon} />
             <Field type="text" id="name" name="name" placeholder="Name" />
+            <FaPen className={c.icon} />
           </div>
           <ErrorMessage className={c.error} name="name" component="span" />
         </div>
         <div className={c.inputContainer}>
           <label htmlFor="number">Number</label>
-          <Field type="text" id="number" name="number" placeholder="Number" />
+          <div className={c.inputWrapper}>
+            <Field type="text" id="number" name="number" placeholder="Number" />
+            <FaPen className={c.icon} />
+          </div>
           <ErrorMessage className={c.error} name="number" component="span" />
         </div>
 

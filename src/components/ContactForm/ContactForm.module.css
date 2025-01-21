@@ -11,25 +11,42 @@
 
 .inputWrapper .icon {
   position: absolute;
-  left: 10px;
-  color: #888; /* Колір іконки */
-  font-size: 1rem; /* Розмір іконки */
-}
-
-.inputWrapper input {
-  width: 100%;
-  padding: 8px 8px 8px 30px; /* Відступ зліва для іконки */
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  left: 20px;
+  color: #888;
   font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
-.inputWrapper input:focus {
-  border-color: #007bff;
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
   outline: none;
+  border-color: #4a90e2;
 }
 
 .error {
-  color: red;
-  font-size: 0.8rem;
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.btnForm {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(45deg, #6a85b6, #bac8e0);
+  color: white;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btnForm:hover {
+  background: linear-gradient(45deg, #5b76a4, #9cb3d3);
+  transform: scale(1.03);
 }
