@@ -1,0 +1,35 @@
+.inputContainer {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputWrapper .icon {
+  position: absolute;
+  left: 10px;
+  color: #888; /* Колір іконки */
+  font-size: 1rem; /* Розмір іконки */
+}
+
+.inputWrapper input {
+  width: 100%;
+  padding: 8px 8px 8px 30px; /* Відступ зліва для іконки */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.inputWrapper input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
