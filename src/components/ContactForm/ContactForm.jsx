@@ -6,12 +6,12 @@ import { FaPen } from "react-icons/fa";
 
 const validationSchema = Yup.object().shape({
   name: Yup.string()
-    .min(3, "Too Short!")
-    .max(50, "Too Long!")
-    .required("Required"),
+    .min(3, "Min length 3 characters!")
+    .max(50, "Max length 50 characters!")
+    .required("Enter name"),
   number: Yup.string()
     .matches(/^\d{3}-\d{2}-\d{2}$/, "Format xxx-xx-xx")
-    .required("Required"),
+    .required("Enter number"),
 });
 
 const ContactForm = ({ onAddContact }) => {

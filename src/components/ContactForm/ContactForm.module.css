@@ -1,5 +1,11 @@
+label {
+  display: block;
+  text-align: start;
+  font-weight: 500;
+}
+
 .inputContainer {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   position: relative;
 }
 
@@ -7,6 +13,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  margin: 5px 0;
 }
 
 .inputWrapper .icon {

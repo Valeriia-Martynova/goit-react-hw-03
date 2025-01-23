@@ -3,12 +3,12 @@ import c from "./Contact.module.css";
 
 const Contact = ({ id, name, number, handleDelete }) => (
   <ul className={c.contactItem}>
-    <li>
-      <FaUser />
+    <li className={c.item}>
+      <FaUser className={c.icon} />
       {name}
     </li>
-    <li>
-      <FaPhoneAlt />
+    <li className={c.item}>
+      <FaPhoneAlt className={c.icon} />
       {number}
     </li>
     <button className={c.btnDelete} onClick={() => handleDelete(id)}>
