@@ -12,8 +12,7 @@ li {
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  transition: transform 0.3s, background-color 0.3s;
-  background-color: #fff;
+  transition: transform 0.25s, background-color 0.25s;
 }
 
 .contactDetails {
